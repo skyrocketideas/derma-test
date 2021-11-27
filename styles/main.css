@@ -21,3 +21,13 @@ a {
 body {
 	font-family: var(--primary-font);
 }
+
+nav ul {
+	display: flex;
+	justify-content: flex-start;
+}
+
+li {
+	margin-right: 1rem;
+	list-style: none;
+}

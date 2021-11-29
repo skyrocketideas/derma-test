@@ -2,6 +2,7 @@
 	--primary-color: #00609c;
 	--secondary-color: #c017a2;
 	--tertiary-color: #e6e7e8;
+	--bg-container: #eee;
 	--text-title: #111;
 	--text-title-weight: bold;
 	--primary-font: "helvetica", sans-serif;
@@ -51,6 +52,9 @@ li {
 	margin: 0 1rem;
 }
 
+.container-bg {
+	background-color: var(--bg-container);
+}
 /* #container_hero {
 	display: flex;
 	flex-direction: column;

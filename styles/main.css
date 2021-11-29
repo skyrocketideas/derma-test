@@ -35,6 +35,10 @@ li {
 	list-style: none;
 }
 
+h1 {
+	color: var(--primary-color);
+}
+
 .title {
 	color: var(--text-title);
 	font-size: 1.5rem;

@@ -9,7 +9,7 @@
 	--margin: 1rem;
 	--padding: 1rem;
 	--padding-button: 1rem 2rem;
-	--padding-container: 1rem 0;
+	--padding-container: 2rem 0;
 	--bg-container: #eee;
 	--bg-footer: var(--primary-color);
 	--bg-button: var(--secondary-color);
@@ -42,6 +42,17 @@ video {
 	height: auto;
 }
 
+.img-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.img-icon > img {
+	width: 200px;
+}
+
 body {
 	font-family: var(--primary-font);
 	line-height: var(--text-body-line-height);
@@ -66,10 +77,10 @@ button {
 	border-radius: var(--border);
 }
 
-/* section {
-	margin: var(--margin) 0;
+section {
+	/* margin: var(--margin) 0; */
 	padding: var(--padding-container);
-} */
+}
 
 /* article > p {
 	padding: var(--padding);
@@ -138,7 +149,7 @@ footer {
 }
 
 .container-header {
-	grid-column: 2 / 12;
+	grid-column: 1 / 12;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

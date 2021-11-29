@@ -135,6 +135,15 @@ section {
 	background: var(--bg-hero);
 }
 
+.container-video {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-video > .container-inner {
+	order: 1;
+}
+
 /* .container-hero img {
 	height: 100%;
 	width: auto;

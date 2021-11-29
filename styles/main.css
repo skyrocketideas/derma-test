@@ -88,16 +88,20 @@ section {
 .nav-main {
 	text-align: center;
 	margin: var(--margin);
+	display: none;
 }
 
 .nav-toggle {
-	display: flex;
-	justify-content: right;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	font-size: 20px;
 }
 
-/* article > p {
-	padding: var(--padding);
-} */
+.active {
+	display: block;
+}
 
 .title {
 	color: var(--text-title);
@@ -197,6 +201,23 @@ footer a {
 }
 
 @media (min-width: 600px) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		height: 4rem;
+		align-items: center;
+		background-color: yellow;
+	}
+	.nav-main {
+		display: flex;
+		margin-right: 10rem;
+	}
+	.nav-main li {
+		margin-left: 20px;
+	}
+	.nav-toggle {
+		display: none;
+	}
 	.container-hero {
 		grid-column: 1 / 13;
 		display: grid;

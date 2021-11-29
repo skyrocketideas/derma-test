@@ -2,6 +2,8 @@
 	--primary-color: #00609c;
 	--secondary-color: #c017a2;
 	--tertiary-color: #e6e7e8;
+	--base-color-lightest: #fff;
+	--base-color-darkest: #111;
 	--border: 2rem;
 	--padding: 1rem;
 	--padding-button: 1rem 2rem;
@@ -10,7 +12,7 @@
 	--bg-button: var(--secondary-color);
 	--text-button: #fff;
 	--text-button-weight: bold;
-	--text-title: #111;
+	--text-footer-color: var(--base-color-lightest);
 	--text-title-weight: bold;
 	--text-title-line-height: 2rem;
 	--text-body-line-height: 1.5rem;
@@ -95,4 +97,5 @@ button {
 
 footer {
 	background: var(--bg-footer);
+	color: var(--base-color-lightest);
 }

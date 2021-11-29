@@ -7,6 +7,7 @@
 	--border: 2rem;
 	--gap: 2rem;
 	--margin: 1rem;
+	--margin-button: 1rem 0;
 	--padding: 1rem;
 	--padding-button: 1rem 2rem;
 	--padding-container: 2rem 0;
@@ -75,6 +76,7 @@ button {
 	color: var(--text-button);
 	font-weight: var(--text-button-weight);
 	border-radius: var(--border);
+	margin: var(--margin-button);
 }
 
 section {
@@ -91,6 +93,12 @@ section {
 	font-size: 1.5rem;
 	font-weight: var(--text-title-weight);
 	line-height: var(--text-title-line-height);
+}
+
+.card {
+	background-color: var(--bg-container);
+	padding: var(--padding);
+	margin: var(--margin);
 }
 
 /* nav ul {

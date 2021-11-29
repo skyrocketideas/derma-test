@@ -146,7 +146,8 @@ section {
 .container-bg {
 	background-color: var(--bg-container);
 }
-.container-hero {
+.container-hero,
+.container-hero-main {
 	display: flex;
 	flex-direction: column;
 	height: 400px;
@@ -242,10 +243,35 @@ footer a {
 	.nav-toggle {
 		display: none;
 	}
+	.container-hero-main {
+		grid-column: 1 / 13;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		background-color: var(--bg-hero);
+		color: var(--base-color-lightest);
+	}
 	.container-hero {
 		grid-column: 1 / 13;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.container-hero-main div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		grid-column: 2 / 8;
+	}
+	.logo-hero {
+		width: 100px;
+		height: auto;
+	}
+	.img-hero {
+		display: block;
+	}
+	.title {
+		padding: 0;
+		margin-top: 1rem;
 	}
 	.container-benefits {
 		grid-column: 2 / 12;

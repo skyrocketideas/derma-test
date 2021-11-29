@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header>
+			<header class="container-header">
 				<div class="container-logo">
 					<img src="static/logo/derma-world.png" alt="Derma World logo" />
 				</div>
@@ -18,24 +18,26 @@
 					<input type="search" id="search" name="search" />
 					<input type="submit" />
 				</form>
-				<nav>
-					<ul>
-						<li><a href="#">Bedingungen</a></li>
-						<li><a href="#">Behandlungen</a></li>
-						<li><a href="#">Veranstaltungen</a></li>
-						<li><a href="#">Werkzeuge</a></li>
-						<li><a href="#">Forschung und Erkenntnisse</a></li>
-					</ul>
-				</nav>
 			</header>
+			<!-- <nav>
+				<ul>
+					<li><a href="#">Bedingungen</a></li>
+					<li><a href="#">Behandlungen</a></li>
+					<li><a href="#">Veranstaltungen</a></li>
+					<li><a href="#">Werkzeuge</a></li>
+					<li><a href="#">Forschung und Erkenntnisse</a></li>
+				</ul>
+			</nav> -->
 			<section class="container container-hero">
 				<!-- <img src="static/logo/adtralza-logo.png" alt="Adtralza logo" /> -->
-				<img src="static/img/hero-image.jpg" alt="Adtralza main image" />
-				<p class="title container-inner">
-					Adtralza® is a new treatment for adult patients with
-					moderate-to-severe atopic dermatitis (eczema) who are candidates for
-					systemic therapy.
-				</p>
+				<div class="container-inner">
+					<img src="static/img/hero-image.jpg" alt="Adtralza main image" />
+					<p class="title container-inner">
+						Adtralza® is a new treatment for adult patients with
+						moderate-to-severe atopic dermatitis (eczema) who are candidates for
+						systemic therapy.
+					</p>
+				</div>
 			</section>
 			<section class="container container-hero container-bg">
 				<img
@@ -206,11 +208,9 @@
 				<p>References</p>
 			</section>
 			<footer class="container container-footer">
-				<img
-					class="logo"
-					src="static/logo/leo-logo.png"
-					alt="LEO Pharma logo"
-				/>
+				<div class="container-logo">
+					<img src="static/logo/leo-logo.png" alt="LEO Pharma logo" />
+				</div>
 				<div class="footer-links">
 					<ul>
 						<li><a href="#"></a>Contact</li>

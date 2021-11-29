@@ -13,6 +13,7 @@
 	--bg-container: #eee;
 	--bg-footer: var(--primary-color);
 	--bg-button: var(--secondary-color);
+	--bg-hero: #05172b;
 	--text-button: #fff;
 	--text-button-weight: bold;
 	--text-footer-color: var(--base-color-lightest);
@@ -65,11 +66,6 @@ button {
 	border-radius: var(--border);
 }
 
-.logo {
-	width: auto;
-	height: 80px;
-}
-
 /* section {
 	margin: var(--margin) 0;
 	padding: var(--padding-container);
@@ -103,6 +99,20 @@ button {
 	padding: 0 var(--padding);
 }
 
+.container-hero {
+	height: 400px;
+	align-items: center;
+}
+
+.container-hero:first-of-type {
+	background: var(--bg-hero);
+}
+
+/* .container-hero img {
+	height: 100%;
+	width: auto;
+} */
+
 footer {
 	background: var(--bg-footer);
 	color: var(--base-color-lightest);
@@ -117,6 +127,13 @@ footer {
 
 .wrapper > * {
 	grid-column: 1 / span 12;
+}
+
+.container-header {
+	grid-column: 2 / 12;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media (min-width: 600px) {
@@ -154,6 +171,12 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--gap);
+	}
+	.container-header {
+		grid-column: 2 / 12;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.container-footer {
 		grid-column: 2 / 12;

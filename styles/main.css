@@ -200,6 +200,18 @@ footer a {
 	align-items: center;
 }
 @media (min-width: 600px) {
+	.container-header {
+		grid-column: 2 / 12;
+		display: grid;
+		/* justify-content: space-between;
+		align-items: center; */
+	}
+	.form-search {
+		grid-column: 7 / 9;
+	}
+	.container-logo {
+		grid-column: 1 / 2;
+	}
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -250,12 +262,6 @@ footer a {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--gap);
-	}
-	.container-header {
-		grid-column: 2 / 12;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 	}
 	.container-footer {
 		grid-column: 2 / 12;

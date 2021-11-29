@@ -2,10 +2,13 @@
 	--primary-color: #00609c;
 	--secondary-color: #c017a2;
 	--tertiary-color: #e6e7e8;
+	--border: 2rem;
 	--padding: 1rem;
-	--padding-button: 1rem 1.5rem;
+	--padding-button: 1rem 2rem;
 	--bg-container: #eee;
 	--bg-button: var(--secondary-color);
+	--text-button: #fff;
+	--text-button-weight: bold;
 	--text-title: #111;
 	--text-title-weight: bold;
 	--text-title-line-height: 2rem;
@@ -49,6 +52,9 @@ button {
 	border: none;
 	padding: var(--padding-button);
 	background: var(--bg-button);
+	color: var(--text-button);
+	font-weight: var(--text-button-weight);
+	border-radius: var(--border);
 }
 
 .title {

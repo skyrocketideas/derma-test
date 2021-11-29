@@ -6,6 +6,7 @@
 	--padding: 1rem;
 	--padding-button: 1rem 2rem;
 	--bg-container: #eee;
+	--bg-footer: var(--primary-color);
 	--bg-button: var(--secondary-color);
 	--text-button: #fff;
 	--text-button-weight: bold;
@@ -29,7 +30,8 @@ a {
 	text-decoration: none;
 }
 
-img {
+img,
+video {
 	width: 100%;
 	height: auto;
 }
@@ -90,3 +92,7 @@ button {
 /* .container h1 {
 	position: absolute;
 } */
+
+footer {
+	background: var(--bg-footer);
+}

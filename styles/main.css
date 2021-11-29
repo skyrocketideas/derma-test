@@ -91,6 +91,11 @@ button {
 	background-color: var(--bg-container);
 }
 
+.container-img {
+	width: 100%;
+	height: auto;
+}
+
 .container-logo {
 	padding: 1rem;
 }
@@ -100,8 +105,11 @@ button {
 }
 
 .container-hero {
+	display: flex;
+	flex-direction: column;
 	height: 400px;
 	align-items: center;
+	justify-content: center;
 }
 
 .container-hero:first-of-type {
@@ -122,7 +130,7 @@ footer {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap: 1rem;
+	/* gap: 1rem; */
 }
 
 .wrapper > * {

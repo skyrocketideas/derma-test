@@ -8,7 +8,7 @@
 		<title>Derma World</title>
 	</head>
 	<body>
-		<div id="wrapper">
+		<div class="wrapper">
 			<header>
 				<div class="container-logo">
 					<img src="static/logo/derma-world.png" alt="Derma World logo" />
@@ -28,7 +28,7 @@
 					</ul>
 				</nav>
 			</header>
-			<section class="container" id="container_hero">
+			<section class="container container-hero">
 				<!-- <img src="static/logo/adtralza-logo.png" alt="Adtralza logo" /> -->
 				<img src="static/img/hero-image.jpg" alt="Adtralza main image" />
 				<p class="title container-inner">
@@ -37,7 +37,7 @@
 					systemic therapy.
 				</p>
 			</section>
-			<section class="container container-bg">
+			<section class="container container-hero container-bg">
 				<img
 					src="static/img/adtralza-packshot.png"
 					alt="Adtralza packaging image"
@@ -53,7 +53,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="container">
+			<section class="container container-benefits">
 				<div class="container-inner">
 					<img src="static/svg/9-out-of-10.svg" alt="9 out of 10 icon" />
 					<h1>Long term sustained improvement</h1>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="container container-bg">
+			<section class="container container-video container-bg">
 				<div class="container-inner">
 					<h1>
 						Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
@@ -111,18 +111,20 @@
 					<img src="static/img/immune-system.jpg" alt="Immune system" />
 				</div>
 			</section>
-			<section class="container">
-				<h1 class="container-inner">Clinical tools - at a glance</h1>
-				<img src="static/img/nurse.png" alt="Nurse" />
-				<div class="container-inner">
-					<h1>Dosing guide</h1>
-					<p>
-						Adtralza® has a straightforward dosing regimen, with 150 mg
-						prefilled syringes
-					</p>
-					<a href="#">Learn more about application and dosing</a>
+			<section class="container container-tools">
+				<!-- <h1 class="container-inner">Clinical tools - at a glance</h1> -->
+				<div class="card">
+					<img src="static/img/nurse.png" alt="Nurse" />
+					<div class="container-inner">
+						<h1>Dosing guide</h1>
+						<p>
+							Adtralza® has a straightforward dosing regimen, with 150 mg
+							prefilled syringes
+						</p>
+						<a href="#">Learn more about application and dosing</a>
+					</div>
 				</div>
-				<div>
+				<div class="card">
 					<img src="static/img/leg-injection.jpg" alt="Leg injection" />
 					<div class="container-inner">
 						<h1>Patient injection made simple</h1>
@@ -134,14 +136,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="container container-bg">
-				<div class="container-inner">
+			<section class="container container-video-cards container-bg">
+				<!-- <div class="container-inner">
 					<h1>KOL Videos - get expert insights here</h1>
 					<p>
 						See what Key opinion leaders have to say about their experiences
 						with Adtralza®
 					</p>
-				</div>
+				</div> -->
 				<div class="container-inner">
 					<video
 						poster="static/img/video-placeholder.png"
@@ -199,20 +201,17 @@
 					</p>
 				</div>
 			</section>
-			<section class="container">
+			<section class="container container-references">
 				<img src="static/svg/down-arrow-blue.svg" alt="Down arrow" />
 				<p>References</p>
 			</section>
-			<footer class="container">
-				<img src="static/logo/leo-logo.png" alt="LEO Pharma logo" />
-				<div>
-					<p>
-						© Copyright LEO Pharma 2020 LEO and the LEO Lion Design are
-						registered trademarks of LEO Pharma All rights reserved
-					</p>
-					<a href="#">LEO Pharma corporate website</a>
-				</div>
-				<div>
+			<footer class="container container-footer">
+				<img
+					class="logo"
+					src="static/logo/leo-logo.png"
+					alt="LEO Pharma logo"
+				/>
+				<div class="footer-links">
 					<ul>
 						<li><a href="#"></a>Contact</li>
 						<li><a href="#"></a>Imprint</li>
@@ -221,6 +220,13 @@
 						<li><a href="#"></a>Privacy</li>
 						<li><a href="#"></a>Cookie content</li>
 					</ul>
+				</div>
+				<div class="footer-text">
+					<p>
+						© Copyright LEO Pharma 2020 LEO and the LEO Lion Design are
+						registered trademarks of LEO Pharma All rights reserved
+					</p>
+					<a href="#">LEO Pharma corporate website</a>
 				</div>
 			</footer>
 		</div>

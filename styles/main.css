@@ -2,6 +2,8 @@
 	--primary-color: #00609c;
 	--secondary-color: #c017a2;
 	--tertiary-color: #e6e7e8;
+	--text-title: #111;
+	--text-title-weight: bold;
 	--primary-font: "helvetica", sans-serif;
 	--secondary-font: "times", sans-serif;
 }
@@ -30,6 +32,12 @@ body {
 li {
 	margin-right: 1rem;
 	list-style: none;
+}
+
+.title {
+	color: var(--text-title);
+	font-size: 1.5rem;
+	font-weight: var(--text-title-weight);
 }
 
 /* nav ul {

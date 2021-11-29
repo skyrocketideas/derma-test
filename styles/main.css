@@ -16,6 +16,7 @@
 	--bg-footer: var(--primary-color);
 	--bg-button: var(--secondary-color);
 	--bg-hero: #05172b;
+	--box-shadow: 1rem 1rem 0 0.1rem;
 	--text-button: #fff;
 	--text-button-weight: bold;
 	--text-footer-color: var(--base-color-lightest);
@@ -142,6 +143,12 @@ section {
 	display: flex;
 	flex-direction: column;
 	height: 400px;
+	align-items: center;
+	justify-content: center;
+}
+.container-img {
+	overflow: hidden;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }

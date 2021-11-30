@@ -171,6 +171,15 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap); } }
 
+.img-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.img-icon > img {
+  width: 200px; }
+
 .container-bg {
   background-color: var(--bg-container); }
 
@@ -198,19 +207,18 @@ footer a {
   flex-direction: column;
   height: 400px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: var(--bg-hero);
+  color: var(--base-color-lightest);
+  background-image: url("/static/img/hero-image.jpg");
+  background-position: right;
+  background-size: cover;
+  position: relative; }
   @media only screen and (min-width: 600px) {
     .container-hero-main {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-column: 1 / 13;
-      background-color: var(--bg-hero);
-      color: var(--base-color-lightest);
-      height: 400px;
-      background-image: url("/static/img/hero-image.jpg");
-      background-position: center;
-      background-size: cover;
-      position: relative; } }
+      grid-column: 1 / 13; } }
 
 .container-img {
   overflow: hidden;
@@ -228,10 +236,10 @@ footer a {
   .hero-text {
     grid-column: 2 / 8; } }
 
-@media only screen and (min-width: 600px) {
-  .logo-hero {
-    width: 100px;
-    height: auto; } }
+.logo-hero {
+  width: 100px;
+  height: auto;
+  margin: 0 1rem; }
 
 .container-inner {
   padding: 0 var(--padding); }

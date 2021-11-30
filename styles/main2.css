@@ -94,13 +94,14 @@ button {
   align-items: center; }
 
 .form-search {
-  width: 100%;
+  width: 50%;
   position: relative;
-  display: flex;
-  align-items: center; }
+  align-items: center;
+  display: none; }
   @media only screen and (min-width: 600px) {
     .form-search {
-      grid-column: 7 / 9; } }
+      grid-column: 5 / 9;
+      display: flex; } }
 
 .form-search label {
   display: none; }
@@ -145,7 +146,7 @@ footer a {
 
 @use "partials/abstracts/mixins";
 .container-header {
-  grid-column: 1 / 12;
+  grid-column: 1 / 13;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -155,9 +156,6 @@ footer a {
       display: grid; } }
 
 @use "partials/abstracts/mixins";
-section {
-  margin: 3rem 0; }
-
 /* page wrapper */
 .wrapper {
   display: grid;
@@ -245,9 +243,10 @@ section {
   margin: 0 1rem; }
 
 .container-inner {
-  padding: 0 var(--padding); }
+  padding: 2rem var(--padding); }
 
 .container-references {
+  margin: var(--margin) 0;
   display: flex;
   padding: 1rem;
   align-items: center;
@@ -259,14 +258,17 @@ section {
       grid-template-columns: repeat(12, 1fr);
       gap: var(--gap); } }
 
-@media only screen and (min-width: 600px) {
-  .container-tools {
-    grid-column: 2 / 12;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--gap); } }
+.container-tools {
+  margin: var(--margin) 0; }
+  @media only screen and (min-width: 600px) {
+    .container-tools {
+      grid-column: 2 / 12;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap); } }
 
 .container-video {
+  margin: var(--margin) 0;
   display: flex;
   flex-direction: column; }
   @media only screen and (min-width: 600px) {
@@ -278,6 +280,9 @@ section {
 
 .container-video > .container-inner {
   order: 1; }
+  @media only screen and (min-width: 600px) {
+    .container-video > .container-inner {
+      order: -1; } }
 
 @media only screen and (min-width: 600px) {
   .container-video-cards {
@@ -287,12 +292,14 @@ section {
     gap: var(--gap); } }
 
 @use "partials/abstracts/mixins";
-@media only screen and (min-width: 600px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    align-items: center; } }
+nav {
+  background: var(--bg-container); }
+  @media only screen and (min-width: 600px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      height: 4rem;
+      align-items: center; } }
 
 .nav-main {
   text-align: center;

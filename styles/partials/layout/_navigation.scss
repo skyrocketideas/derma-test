@@ -1,6 +1,7 @@
 @use "partials/abstracts/mixins";
 
 nav {
+	background: var(--bg-container);
 	@include respond(tablet) {
 		display: flex;
 		justify-content: space-between;

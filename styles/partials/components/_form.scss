@@ -15,12 +15,13 @@
 	align-items: center;
 }
 .form-search {
-	width: 100%;
+	width: 50%;
 	position: relative;
-	display: flex;
 	align-items: center;
+	display: none;
 	@include respond(tablet) {
-		grid-column: 7 / 9;
+		grid-column: 5 / 9;
+		display: flex;
 	}
 }
 .form-search label {

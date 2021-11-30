@@ -1,0 +1,42 @@
+.form-search {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.form-search label {
+	display: none;
+}
+input {
+	width: 100%;
+	border: 0.15rem solid var(--border-color);
+	border-right: none;
+	padding: 1rem;
+	height: 2rem;
+	border-radius: 1rem 0 0 1rem;
+	outline: none;
+	color: #9dbfaf;
+}
+.btn-submit {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	width: 40px;
+	height: 2rem;
+	border: 0.15rem solid var(--border-color);
+	border-left: none;
+	text-align: center;
+	color: var(--primary-color);
+	border-radius: 0 1rem 1rem 0;
+	cursor: pointer;
+	align-items: center;
+}
+// button {
+// 	border: none;
+// 	padding: var(--padding-button);
+// 	background: var(--bg-button);
+// 	color: var(--text-button);
+// 	font-weight: var(--text-button-weight);
+// 	border-radius: var(--border);
+// 	margin: var(--margin-button);
+// }

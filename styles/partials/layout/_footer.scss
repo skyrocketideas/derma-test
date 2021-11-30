@@ -1,0 +1,12 @@
+footer {
+	padding: var(--padding);
+	background: var(--bg-footer);
+	color: var(--base-color-lightest);
+}
+footer .img-icon {
+	width: 50px;
+}
+footer a {
+	font-weight: lighter;
+	color: var(--base-color-lightest);
+}

@@ -1,0 +1,23 @@
+/* navigation */
+.nav-main {
+	text-align: center;
+	margin: var(--margin);
+	display: none;
+}
+.nav-toggle {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	font-size: 20px;
+}
+.nav-link {
+	font-weight: normal;
+	color: var(--base-color-darkest);
+}
+.nav-link:hover {
+	color: var(--secondary-color);
+}
+.active {
+	display: block;
+}

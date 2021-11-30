@@ -8,12 +8,17 @@
 	}
 }
 footer {
-	padding: var(--padding);
 	background: var(--bg-footer);
 	color: var(--base-color-lightest);
+	padding: 1rem;
+	@include respond(tablet) {
+		padding: 5rem;
+	}
 }
 footer .img-icon {
 	width: 50px;
+	grid-column: 2;
+	margin: 2rem 1rem;
 }
 footer a {
 	font-weight: lighter;
@@ -22,6 +27,15 @@ footer a {
 .footer-links {
 	@include respond(tablet) {
 		grid-column: 4 / 10;
+		grid-row: 2;
+	}
+}
+.footer-text {
+	grid-column: 9 / 12;
+	text-align: left;
+	margin: 2rem 0;
+	@include respond(tablet) {
+		text-align: right;
 	}
 }
 .footer-links ul {

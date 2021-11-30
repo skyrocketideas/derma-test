@@ -1,5 +1,8 @@
 @use "partials/abstracts/mixins";
 
+section {
+	margin: 3rem 0;
+}
 /* page wrapper */
 .wrapper {
 	display: grid;

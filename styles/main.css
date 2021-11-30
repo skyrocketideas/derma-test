@@ -244,11 +244,19 @@ footer a {
 		display: none;
 	}
 	.container-hero-main {
-		grid-column: 1 / 13;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		grid-column: 1 / 13;
 		background-color: var(--bg-hero);
 		color: var(--base-color-lightest);
+		height: 400px;
+		background-image: url("/static/img/hero-image.jpg");
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	.hero-text {
+		grid-column: 5 / 9;
 	}
 	.container-hero {
 		grid-column: 1 / 13;
@@ -266,9 +274,7 @@ footer a {
 		width: 100px;
 		height: auto;
 	}
-	.img-hero {
-		display: block;
-	}
+
 	.title {
 		padding: 0;
 		margin-top: 1rem;

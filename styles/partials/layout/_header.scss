@@ -1,6 +1,12 @@
+@use "partials/abstracts/mixins";
+
 .container-header {
 	grid-column: 1 / 12;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@include respond(tablet) {
+		grid-column: 2 / 12;
+		display: grid;
+	}
 }

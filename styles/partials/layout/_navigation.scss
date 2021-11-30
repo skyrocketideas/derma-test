@@ -1,8 +1,26 @@
-/* navigation */
+@use "partials/abstracts/mixins";
+
+nav {
+	@include respond(tablet) {
+		display: flex;
+		justify-content: space-between;
+		height: 4rem;
+		align-items: center;
+	}
+}
 .nav-main {
 	text-align: center;
 	margin: var(--margin);
 	display: none;
+	@include respond(tablet) {
+		display: flex;
+		margin-right: 10rem;
+	}
+	& li {
+		@include respond(tablet) {
+			margin-left: 20px;
+		}
+	}
 }
 .nav-toggle {
 	position: absolute;
@@ -10,13 +28,16 @@
 	right: 1rem;
 	cursor: pointer;
 	font-size: 20px;
+	@include respond(tablet) {
+		display: none;
+	}
 }
 .nav-link {
 	font-weight: normal;
 	color: var(--base-color-darkest);
-}
-.nav-link:hover {
-	color: var(--secondary-color);
+	&:hover {
+		color: var(--secondary-color);
+	}
 }
 .active {
 	display: block;

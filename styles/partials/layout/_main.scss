@@ -1,3 +1,5 @@
+@use "partials/abstracts/mixins";
+
 /* page wrapper */
 .wrapper {
 	display: grid;
@@ -7,81 +9,44 @@
 .wrapper > * {
 	grid-column: 1 / span 12;
 }
+.container-benefits {
+	@include respond(tablet) {
+		grid-column: 2 / 12;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--gap);
+	}
+}
 .container-bg {
 	background-color: var(--bg-container);
 }
-.container-hero,
+.container-hero {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+	@include respond(tablet) {
+		grid-column: 1 / 13;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&:first-of-type {
+		background: var(--bg-hero);
+		color: var(--base-color-lightest);
+	}
+}
+.container-hero img {
+	height: 100%;
+	width: auto;
+}
 .container-hero-main {
 	display: flex;
 	flex-direction: column;
 	height: 400px;
 	align-items: center;
 	justify-content: center;
-}
-.container-img {
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.container-inner {
-	padding: 0 var(--padding);
-}
-.container-hero:first-of-type {
-	background: var(--bg-hero);
-	color: var(--base-color-lightest);
-}
-.container-logo {
-	padding: 1rem;
-}
-.container-references {
-	display: flex;
-	padding: 1rem;
-	align-items: center;
-	gap: 1rem;
-}
-.container-video {
-	display: flex;
-	flex-direction: column;
-}
-.container-video > .container-inner {
-	order: 1;
-}
-.container-hero img {
-	height: 100%;
-	width: auto;
-}
-
-@media (min-width: 600px) {
-	.container-header {
-		grid-column: 2 / 12;
-		display: grid;
-		/* justify-content: space-between;
-		align-items: center; */
-	}
-	.form-search {
-		grid-column: 7 / 9;
-	}
-	.container-logo {
-		grid-column: 1 / 2;
-	}
-	nav {
-		display: flex;
-		justify-content: space-between;
-		height: 4rem;
-		align-items: center;
-	}
-	.nav-main {
-		display: flex;
-		margin-right: 10rem;
-	}
-	.nav-main li {
-		margin-left: 20px;
-	}
-	.nav-toggle {
-		display: none;
-	}
-	.container-hero-main {
+	@include respond(tablet) {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-column: 1 / 13;
@@ -93,62 +58,71 @@
 		background-size: cover;
 		position: relative;
 	}
-	.hero-text {
+}
+.container-img {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container-logo {
+	padding: 1rem;
+	@include respond(tablet) {
+		grid-column: 1 / 2;
+	}
+}
+.hero-text {
+	@include respond(tablet) {
 		grid-column: 2 / 8;
 	}
-	.container-hero {
-		grid-column: 1 / 13;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.logo-hero {
+}
+.logo-hero {
+	@include respond(tablet) {
 		width: 100px;
 		height: auto;
 	}
-	.title {
-		padding: 0;
-		margin-top: 1rem;
-	}
-	.container-benefits {
-		grid-column: 2 / 12;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: var(--gap);
-	}
-	.container-video {
-		grid-column: 2 / 12;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--gap);
-	}
-	.container-tools {
-		grid-column: 2 / 12;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--gap);
-	}
-	.container-video-cards {
-		grid-column: 2 / 12;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--gap);
-	}
-	.container-references {
+}
+.container-inner {
+	padding: 0 var(--padding);
+}
+.container-references {
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+	gap: 1rem;
+	@include respond(tablet) {
 		grid-column: 2 / 12;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--gap);
 	}
-	.container-footer {
+}
+.container-tools {
+	@include respond(tablet) {
 		grid-column: 2 / 12;
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--gap);
 	}
-	.footer-links {
-		grid-column: 4 / 10;
+}
+.container-video {
+	display: flex;
+	flex-direction: column;
+	@include respond(tablet) {
+		grid-column: 2 / 12;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--gap);
 	}
-	.footer-links ul {
-		display: flex;
-		justify-content: space-around;
+}
+.container-video > .container-inner {
+	order: 1;
+}
+.container-video-cards {
+	@include respond(tablet) {
+		grid-column: 2 / 12;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--gap);
 	}
 }

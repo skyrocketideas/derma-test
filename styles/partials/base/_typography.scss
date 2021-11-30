@@ -1,6 +1,12 @@
+@use "partials/abstracts/mixins";
+
 .title {
 	color: var(--text-title);
 	font-size: 1.5rem;
 	font-weight: var(--text-title-weight);
 	line-height: var(--text-title-line-height);
+	@include respond(tablet) {
+		padding: 0;
+		margin-top: 1rem;
+	}
 }
